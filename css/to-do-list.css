@@ -1,0 +1,97 @@
+body {
+	background: #32373B;  /* fallback for old browsers */
+	/*background: -webkit-linear-gradient(left, #24243e, #302b63, #0f0c29);
+	background: -o-linear-gradient(left, #24243e, #302b63, #0f0c29);
+	background: linear-gradient(to right, #24243e, #302b63, #0f0c29); */
+	font-family: 'sans-serif';
+}
+
+h3 {
+	text-align: center;
+	color: #CFD60A;
+}
+
+h2 {
+	color: #F4B860;
+}
+
+.fa-plus {
+	float: right;
+}
+
+.container {
+	width: 400px;
+	margin: 100px auto;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	position: relative;
+}
+
+li {
+	height: 40px;
+	line-height: 30px;
+	color: #F4D6CC;
+}
+
+li:nth-child(2n) {
+	background: #4A5859;
+}
+
+.left {
+	background: #e74c3c;
+	height: 37px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	width: 0; 
+	opacity: 0;
+	transition: 0.2s linear;
+	position: relative;
+	left: 0px;
+	top: -10%;
+}
+
+.right {
+	background: #e74c3c;
+	height: 37px;
+	text-align: center;
+	color: white;
+	display: inline-block;
+	width: 0; 
+	opacity: 0;
+	transition: 0.2s linear;
+	position: absolute;
+	right: 0px;
+}
+
+li:hover span{
+	width: 35px;
+	opacity: 1;
+}
+
+.todoinput {
+	width: 100%;
+	font-size: 18px;
+	padding: 10px 10px 10px 15px;
+	outline: none;
+	/*box-sizing: border-box; <-- This isn't really required for our code*/
+}
+
+.editinput {
+	height: 100%;
+	width: 100%;
+	outline: none;
+}
+/*
+input:focus {
+	/*border: 1px solid black;
+}*/
+
+.completed {
+	text-decoration: line-through;
+	color: gray;
+}

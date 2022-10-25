@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
@@ -10,9 +11,9 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        
     </head>
     <body>
-        <canvas id="canvas"></canvas>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container">
@@ -30,12 +31,26 @@
         </nav>
         <!-- Page header with logo and tagline-->
         <header class="py-5 bg-light border-bottom mb-4">
-            <div class="container">
+            <!--<div class="container">
                 <div class="text-center my-5">
                     <h1 class="fw-bolder">Welcome!</h1>
                     <p class="lead mb-0">hello</p>
                 </div>
-            </div>
+            </div>-->
+            <div id="slider">
+                <a href="#" class="control_next">>></a>
+                <a href="#" class="control_prev"><</a>
+                <ul>
+                  <li style="background-image: url(assets/333.jpeg); background-size: auto;"></li>
+                  <li style="background-image: url(assets/jquery.jpeg); background-size: auto;"></li>
+                  <li style="background-image: url(assets/0_GtnVfAO9CoCM_3sY.jpeg); background-size: 400px 395px;"></li>
+                  <li style="background-image: url(assets/gsjs7ia2h0861.png); background-size: 700px;"></li>
+                </ul>  
+              </div>
+              <div class="slider_option">
+                <input type="checkbox" id="switch">
+                <label for="switch">Toggle</label>
+              </div> 
         </header>
         <!-- Page content-->
         <div class="container">
